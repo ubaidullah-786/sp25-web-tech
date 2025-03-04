@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+/*******************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*******************************/
+
+.icon {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,108 @@
+/*******************************/
+/* ANNOUNCEMENT */
+/*******************************/
+
+.announcement {
+  background-color: #1c1c1c;
+  padding: 1.2rem 1rem;
+}
+
+.announcement-text {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.04rem;
+}
+
+/*******************************/
+/* HEADER */
+/*******************************/
+
+.header {
+  padding: 2.5rem 4.8rem;
+  column-gap: 3.2rem;
+  row-gap: 2.6rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search-text {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 55%;
+  justify-self: center;
+  filter: invert(1) contrast(1);
+}
+
+.flag-account-cart {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  justify-self: end;
+}
+
+.flag {
+  width: 2rem;
+  height: 1.5rem;
+  background: url("https://mdbootstrap.com/img/svg/flags.png") -69px -1949px;
+  cursor: pointer;
+}
+
+/*******************************/
+/* NAVIGATION */
+/*******************************/
+
+.nav {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 4.2rem;
+}
+
+.nav-list-item {
+  position: relative;
+  user-select: none;
+  letter-spacing: 0.05rem;
+}
+
+.nav-list-item:hover {
+  cursor: pointer;
+}
+
+.nav-list-item::after {
+  content: "";
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -2.4rem;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.nav-list-item:hover::after {
+  width: 100%;
+}
+
+.nav-list-item:not(:hover)::after {
+  width: 0;
+}
+
+/*******************************/
+/* HERO SECTION */
+/*******************************/
+
+.hero-img{
+  width: 100%;
+}
