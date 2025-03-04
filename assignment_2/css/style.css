@@ -1,5 +1,5 @@
 /*******************************/
-/* ANNOUNCEMENT */
+/* ANNOUNCEMENT AND SUPPORT*/
 /*******************************/
 
 .announcement {
@@ -11,7 +11,23 @@
   font-size: 1.2rem;
   color: #fff;
   text-align: center;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.4px;
+}
+
+.msg-icon {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.message-us {
+  background-color: #767676;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 1.3rem 1.3rem 0.9rem 1.3rem;
+  cursor: pointer;
+  position: fixed;
+  right: 2.4%;
+  bottom: 7.2%;
 }
 
 /*******************************/
@@ -19,7 +35,7 @@
 /*******************************/
 
 .header {
-  padding: 2.5rem 4.8rem;
+  padding: 2.5rem 4.8rem 0;
   column-gap: 3.2rem;
   row-gap: 2.6rem;
 }
@@ -74,7 +90,8 @@
 .nav-list-item {
   position: relative;
   user-select: none;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.5px;
+  height: 4.7rem;
 }
 
 .nav-list-item:hover {
@@ -86,7 +103,7 @@
   height: 2px;
   background-color: #000;
   position: absolute;
-  bottom: -2.4rem;
+  bottom: 0;
   left: 0;
   transition: all 0.3s;
 }
@@ -100,9 +117,111 @@
 }
 
 /*******************************/
+/* SHOPPING MENUS */
+/*******************************/
+
+.shop-menu {
+  display: flex;
+  gap: 3.2rem;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  width: 3674%;
+  top: 100%;
+  left: -1871%;
+  padding: 4rem 9.6rem;
+  overflow-y: scroll;
+  height: 850%;
+  cursor: auto;
+}
+
+.clothing-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.9rem;
+  cursor: pointer;
+}
+
+.clothing-list {
+  list-style: none;
+  display: flex;
+  gap: 1.1rem;
+  flex-direction: column;
+}
+
+.clothing-item {
+  color: #1c1c1ca6;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.clothing-item:hover {
+  color: #1c1c1c;
+}
+
+.fig-img {
+  width: 315px;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+
+.fig-description {
+  text-align: center;
+  cursor: pointer;
+}
+
+#shop > div {
+  display: none;
+}
+
+.test {
+  height: 5px;
+  width: 100%;
+  background-color: #000;
+}
+
+#shop:hover > div {
+  display: flex;
+}
+
+/*******************************/
 /* HERO SECTION */
 /*******************************/
 
-.hero-img{
+.hero {
+  position: relative;
+}
+
+.hero-img {
   width: 100%;
+}
+
+.hero-text-box {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 3.8%;
+}
+
+.hero-heading {
+  font-size: 4.2rem;
+  letter-spacing: 1.6px;
+}
+
+.hero-description {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  letter-spacing: 0.7px;
+}
+
+.hero-cta {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  padding: 1.3rem 2.8rem;
+  margin-top: 3.4rem;
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
 }
