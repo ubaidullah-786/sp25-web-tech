@@ -1,3 +1,7 @@
+.preload-images {
+  width: 0;
+  height: 0;
+}
 /*******************************/
 /* ANNOUNCEMENT AND SUPPORT*/
 /*******************************/
@@ -55,6 +59,7 @@
   width: 55%;
   justify-self: center;
   filter: invert(1) contrast(1);
+  cursor: pointer;
 }
 
 .flag-account-cart {
@@ -90,10 +95,6 @@
   position: relative;
   user-select: none;
   height: 4.7rem;
-}
-
-.nav-list-item:hover {
-  cursor: pointer;
 }
 
 .nav-list-item::after {
@@ -238,42 +239,164 @@
 /* PRODUCTS STACK SECTION */
 /*******************************/
 
-.articles-box {
+.articles {
+  padding: 0 4.6rem;
+}
+
+.article-carousal {
   display: flex;
   gap: 2.3rem;
-  padding: 0 4.6rem;
   text-align: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  cursor: grab;
 }
 
 .product-card {
-  width: 15%;
+  flex-basis: 15%;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
 }
 
-.product-img {
-  width: 100%;
-  margin-bottom: 1.3rem;
+.add-to-cart {
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  padding: 0.5rem 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-to-cart:hover .add-icon {
+  transform: rotate(90deg);
+}
+
+.add-icon {
+  font-size: 2rem;
+  background-color: #fff;
+  display: block;
+}
+
+.product-card:hover .add-to-cart {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-card:not(:hover) .add-to-cart {
+  transform: translateY(12%);
+}
+
+.first-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_025_A.jpg?v=1722979431&width=400");
+}
+
+.first-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_025_B.jpg?v=1722979431&width=400");
+}
+
+.second-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_290_A.jpg?v=1722979382&width=400");
+}
+
+.second-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_290_B.jpg?v=1722979382&width=400");
+}
+
+.third-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077609_290_A.jpg?v=1723136622&width=400");
+}
+
+.third-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077609_290_B.jpg?v=1723136622&width=400");
+}
+
+.fourth-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012790_025_A.jpg?v=1723055724&width=400");
+}
+
+.fourth-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012790_025_B.jpg?v=1723055724&width=400");
+}
+
+.fifth-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077836_169_A.jpg?v=1723223467&width=400");
+}
+
+.fifth-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077836_169_B.jpg?v=1723223466&width=400");
+}
+
+.sixth-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_351_A.jpg?v=1722979273&width=400");
+}
+
+.sixth-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_351_B.jpg?v=1722979273&width=400");
+}
+
+.seventh-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077607_015_A.jpg?v=1723142809&width=400");
+}
+
+.seventh-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077607_015_B.jpg?v=1723142809&width=400");
+}
+
+.eigth-img {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0076985_015_A.jpg?v=1723139509&width=400");
+}
+
+.eigth-img:hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0076985_015_B.jpg?v=1723139509&width=400");
 }
 
 .product-price {
   color: #1c1c1ca6;
   margin-top: 0.7rem;
   margin-bottom: 2rem;
+  cursor: grab !important;
 }
 
-.black {
+.colors {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.color {
   display: inline-block;
-  background-color: #000;
-  width: 2rem;
-  height: 2rem;
+  width: 2.1rem;
+  height: 2.1rem;
   border-radius: 100px;
 }
 
-.black-inside {
+.color-inside {
   border: 2px solid #fff;
   display: inline-block;
   margin-top: 1px;
-  background-color: #000;
   border-radius: 100px;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  cursor: pointer;
+}
+
+.black {
+  background-color: #000;
+}
+
+.dark-green {
+  background-color: #4b5320;
+}
+
+.brown {
+  background-color: #5c4033;
+}
+
+.blue {
+  background-color: #0b0b44;
 }

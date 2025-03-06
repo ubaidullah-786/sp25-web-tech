@@ -14,6 +14,10 @@ body {
   color: #1c1c1c;
 }
 
+ion-icon {
+  --ionicon-stroke-width: 16px;
+}
+
 /*******************************/
 /* GENERAL REUSABLE COMPONENTS */
 /*******************************/
@@ -34,19 +38,31 @@ body {
 .heading-secondary {
   font-size: 1.6rem;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
-.heading-primary{
+.heading-primary {
   text-align: center;
   font-weight: 400;
-  font-size: 3.4rem;
+  font-size: 3.7rem;
   letter-spacing: 1.3px;
 }
 
 .section-margin {
-  margin: 5.6rem 0;
+  margin: 5.2rem 0;
 }
 
-.margin-bottom-md{
+.margin-bottom-md {
   margin-bottom: 3.6rem;
+}
+
+.g-img {
+  width: 100%;
+  height: 262px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.3rem;
+  transition: all 0.1s;
+  cursor: pointer;
 }
