@@ -2,6 +2,32 @@
   width: 0;
   height: 0;
 }
+
+.first-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_025_B.jpg?v=1722979431&width=400");
+}
+.second-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_290_B.jpg?v=1722979382&width=400");
+}
+.third-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077609_290_B.jpg?v=1723136622&width=400");
+}
+.fourth-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012790_025_B.jpg?v=1723055724&width=400");
+}
+.fifth-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077836_169_B.jpg?v=1723223466&width=400");
+}
+.sixth-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_351_B.jpg?v=1722979273&width=400");
+}
+.seventh-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0077607_015_B.jpg?v=1723142809&width=400");
+}
+.eigth-img-hover {
+  background-image: url("https://www.bensherman.com/cdn/shop/files/0076985_015_B.jpg?v=1723139509&width=400");
+}
+
 /*******************************/
 /* ANNOUNCEMENT AND SUPPORT*/
 /*******************************/
@@ -239,8 +265,56 @@
 /* PRODUCTS STACK SECTION */
 /*******************************/
 
+.right-arrow-icon {
+  background-color: #fff;
+  padding: 1.3rem;
+  border-radius: 100px;
+  display: inline-block;
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  padding: 0.6rem;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-icon {
+  font-size: 2rem;
+  background-color: #fff;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-to-cart:hover .add-icon {
+  transform: rotate(90deg);
+}
+
+.product-card:hover .add-to-cart,
+.article-carousal:hover ~ .right-arrow-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-card:not(:hover) .add-to-cart {
+  transform: translateY(12%);
+}
+
 .articles {
   padding: 0 4.6rem;
+  position: relative;
 }
 
 .article-carousal {
@@ -258,37 +332,6 @@
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
-}
-
-.add-to-cart {
-  position: absolute;
-  bottom: 30%;
-  right: 5%;
-  padding: 0.5rem 0.5rem;
-  background-color: #fff;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease-in-out;
-}
-
-.add-to-cart:hover .add-icon {
-  transform: rotate(90deg);
-}
-
-.add-icon {
-  font-size: 2rem;
-  background-color: #fff;
-  display: block;
-}
-
-.product-card:hover .add-to-cart {
-  opacity: 1;
-  visibility: visible;
-}
-
-.product-card:not(:hover) .add-to-cart {
-  transform: translateY(12%);
 }
 
 .first-img {
