@@ -56,12 +56,20 @@
 .message-us {
   background-color: #767676;
   border-radius: 100px;
-  display: inline-block;
   padding: 1.3rem 1.3rem 0.9rem 1.3rem;
   cursor: pointer;
   position: fixed;
   right: 2.4%;
   bottom: 7.2%;
+}
+
+.preferences {
+  background-color: #6aaae4;
+  position: fixed;
+  left: 1%;
+  bottom: 2%;
+  padding: 0.8rem 1.8rem 0.8rem 0;
+  border-radius: 10px;
 }
 
 /*******************************/
@@ -189,6 +197,7 @@
   transition: all 0.3s;
   cursor: pointer;
   font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 .clothing-item:hover {
@@ -538,4 +547,53 @@
 .reg-text {
   font-size: 1.4rem;
   line-height: 1.5;
+}
+
+/*******************************/
+/* FOOTER */
+/*******************************/
+
+.footer {
+  padding: 8.4rem 4.8rem 4.8rem;
+  background-color: #efefef;
+  column-gap: 15rem;
+}
+
+.email-input {
+  padding: 1.04rem 1.2rem;
+  border: 1px solid #cfcfcf;
+  background-color: inherit;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.email-input:focus {
+  outline: none;
+  border: 1px solid #1c1c1c;
+}
+
+.promo {
+  margin: 2rem 0;
+}
+
+.form-btn {
+  margin-top: 1.8rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  gap: 3.6rem;
+  margin-top: 8rem;
+  font-size: 1.8rem;
+  color: #1c1c1ca6;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #1c1c1ca6;
+  margin-top: 5rem;
 }
