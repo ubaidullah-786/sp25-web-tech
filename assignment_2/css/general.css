@@ -18,7 +18,7 @@ ion-icon {
   --ionicon-stroke-width: 16px;
 }
 
-button{
+button {
   border: none;
 }
 
@@ -54,6 +54,7 @@ button{
 
 .section-margin {
   margin: 5.2rem 0;
+  text-align: center;
 }
 
 .margin-bottom-md {

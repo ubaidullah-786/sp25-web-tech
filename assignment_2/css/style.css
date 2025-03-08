@@ -1,3 +1,7 @@
+@font-face {
+  font-family: futuraBold;
+  src: url("../assets/fonts/futura_n7.153f8fffad8e901382179997bbb87aa7a5ff33b3.woff2");
+}
 .preload-images {
   width: 0;
   height: 0;
@@ -250,19 +254,22 @@
 }
 
 .hero-cta {
+  color: #000;
+  background-color: #fff;
+}
+
+.btn {
+  padding: 1.3rem 2.8rem;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  color: #000;
-  background-color: #fff;
-  padding: 1.3rem 2.8rem;
   margin-top: 3.4rem;
-  font-size: 1.4rem;
-  letter-spacing: 1.2px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 
 /*******************************/
-/* PRODUCTS STACK SECTION */
+/* PRODUCT ARTICLES SECTION */
 /*******************************/
 
 .right-arrow-icon {
@@ -442,4 +449,93 @@
 
 .blue {
   background-color: #0b0b44;
+}
+
+.view-btn {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+/*******************************/
+/* PRODUCT CATEGORY SECTION */
+/*******************************/
+
+.category {
+  display: flex;
+  gap: 3rem;
+}
+
+.category-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.category-text {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-shirt,
+.category-outerwear,
+.category-knit {
+  cursor: pointer;
+}
+
+/*******************************/
+/* ABOUT SECTION */
+/*******************************/
+
+.about-section {
+  position: relative;
+  text-transform: uppercase;
+  text-align: start !important;
+}
+
+.about-text-box {
+  top: 25%;
+}
+
+.about-text {
+  font-size: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.about-heading {
+  font-family: futuraBold;
+  margin-left: -1.6rem;
+}
+
+/*******************************/
+/* REGULATIONS  SECTION */
+/*******************************/
+
+.reg-section {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.box-icon {
+  font-size: 3rem;
+}
+
+.reg-box {
+  text-align: center;
+  width: 19%;
+}
+
+.easy-return {
+  width: 18%;
+}
+
+.reg-heading {
+  cursor: text !important ;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.reg-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
