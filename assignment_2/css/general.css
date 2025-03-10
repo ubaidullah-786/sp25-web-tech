@@ -26,6 +26,27 @@ button {
 /* GENERAL REUSABLE COMPONENTS */
 /*******************************/
 
+.nav-list-item:hover::after,
+.fig-img,
+.hero-img,
+.category-img,
+.email-input {
+  width: 100%;
+}
+
+.clothing-item,
+.product-price,
+.social-links,
+.copyright {
+  color: #1c1c1ca6;
+}
+
+.nav-list-item::after,
+.clothing-item,
+.right-arrow-icon {
+  transition: all 0.3s;
+}
+
 .icon {
   font-size: 2.4rem;
   cursor: pointer;
