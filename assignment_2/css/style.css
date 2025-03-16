@@ -480,12 +480,12 @@
   margin-top: 5rem;
 }
 
+/* Preload Images */
 .preload-images {
   width: 0;
   height: 0;
 }
 
-/* Preload Images */
 .first-img-hover {
   background-image: url("https://www.bensherman.com/cdn/shop/files/1012350_025_B.jpg?v=1722979431&width=400");
 }
