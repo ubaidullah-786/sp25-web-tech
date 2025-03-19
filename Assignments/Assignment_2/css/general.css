@@ -29,7 +29,6 @@ button {
 .nav-list-item:hover::after,
 .fig-img,
 .hero-img,
-.category-img,
 .email-input {
   width: 100%;
 }
