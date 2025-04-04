@@ -12,6 +12,7 @@ body {
   font-family: "Futura PT", sans-serif;
   font-weight: 400;
   color: #1c1c1c;
+  overflow-x: hidden;
 }
 
 ion-icon {
@@ -27,7 +28,6 @@ button {
 /*******************************/
 
 .nav-list-item:hover::after,
-.fig-img,
 .hero-img,
 .email-input {
   width: 100%;
@@ -55,8 +55,16 @@ button {
   display: grid;
 }
 
+.grid--1-cols {
+  grid-template-columns: 1fr;
+}
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: 1fr 1fr 2fr 2fr;
 }
 
 .grid--5-cols {
@@ -90,7 +98,7 @@ button {
 }
 
 .g-img {
-  width: 100%;
+  width: 175px;
   height: 262px;
   background-size: cover;
   background-position: center;

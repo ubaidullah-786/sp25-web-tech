@@ -123,26 +123,18 @@
 /*******************************/
 
 .shop-menu {
-  display: flex;
-  gap: 3.2rem;
   position: absolute;
   z-index: 1;
   background-color: #fff;
-  width: 3674%;
+  min-width: 100vw;
   top: 100%;
-  left: -1871%;
-  padding: 4rem 9.6rem;
+  left: 50%;
+  transform: translateX(-52.5%);
+  padding: 4rem 80%;
   overflow-y: scroll;
   height: 850%;
   cursor: auto;
 }
-
-.width-lg {
-  left: -2420% !important;
-  width: 4248%;
-  justify-content: center;
-}
-
 .clothing-list {
   list-style: none;
   display: flex;
@@ -161,7 +153,7 @@
 }
 
 .cloth-fig {
-  width: 30%;
+  justify-self: center;
 }
 
 .fig-img {
@@ -174,8 +166,11 @@
 .fig-description {
   text-align: center;
   cursor: pointer;
-  margin-bottom: 3.6rem;
   padding-bottom: 3rem;
+}
+
+#sale-clothing {
+  justify-self: center;
 }
 
 #shop > div,
@@ -185,7 +180,17 @@
 
 #shop:hover > div,
 #sale:hover > div {
-  display: flex;
+  display: grid;
+}
+
+.cols-3 {
+  grid-template-columns: 0.5fr 1fr 1fr;
+  transform: translateX(-58.3%);
+  padding-left: 5.2rem;
+}
+
+.cols-3 .cloth-fig:last-child {
+  justify-self: start;
 }
 
 /*******************************/
@@ -199,8 +204,8 @@
 .hero-text-box {
   color: #fff;
   position: absolute;
-  top: 25%;
-  left: 3.5%;
+  top: 30%;
+  right: 12%;
 }
 
 .hero-heading {
@@ -295,7 +300,6 @@
 }
 
 .product-card {
-  flex-basis: 15%;
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
@@ -355,14 +359,13 @@
 /* PRODUCT CATEGORY SECTION */
 /*******************************/
 
-.category {
-  display: flex;
+.articles {
   gap: 3rem;
 }
 
 .category-img {
   margin-bottom: 2rem;
-  width: 70%;
+  width: 100%;
 }
 
 .category-text {
@@ -390,6 +393,7 @@
 
 .about-text-box {
   top: 25%;
+  left: 3.5%;
 }
 
 .about-text {
@@ -399,7 +403,7 @@
 
 .about-heading {
   font-family: futuraBold;
-  margin-left: -1.6rem;
+  text-align: left !important;
 }
 
 /*******************************/
@@ -443,7 +447,7 @@
 .footer {
   padding: 8.4rem 4.8rem 4.8rem;
   background-color: #efefef;
-  column-gap: 15rem;
+  column-gap: 12rem;
 }
 
 .email-input {

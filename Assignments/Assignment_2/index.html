@@ -10,6 +10,7 @@
     <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
 
   <body>
@@ -39,7 +40,7 @@
           <li class="nav-list-item">New Arrivals</li>
           <li class="nav-list-item" id="shop">
             Shop
-            <div class="shop-menu">
+            <div class="shop-menu grid grid--4-cols" id="shop-menu">
               <div class="clothing">
                 <p class="heading-secondary margin-bottom-sm">
                   Clothing & Accessories
@@ -67,13 +68,13 @@
               </div>
               <figure class="cloth-fig">
                 <img
-                  class="fig-img"
+                  class="fig-img shop-img"
                   src="assets/img/fig-img-1.jpg"
                   alt="Man wearing sweater"
                 />
                 <p class="fig-description">Ben's Signature Styles</p>
               </figure>
-              <figure class="cloth-fig">
+              <figure class="cloth-fig shop-img">
                 <img
                   class="fig-img"
                   src="assets/img/fig-img-2.jpg"
@@ -85,8 +86,8 @@
           </li>
           <li class="nav-list-item" id="sale">
             Sale
-            <div class="shop-menu width-lg">
-              <div class="clothing">
+            <div class="shop-menu grid cols-3">
+              <div class="clothing" id="sale-clothing">
                 <p class="heading-secondary margin-bottom-sm">
                   Sale Collection
                 </p>
@@ -289,32 +290,30 @@
 
       <section class="product-category section-margin">
         <h2 class="heading-primary margin-bottom-md">Shop by Category</h2>
-        <div class="articles">
-          <div class="category">
-            <div class="category-shirt">
-              <img
-                class="category-img"
-                src="assets/img/shirt-category-img.jpg"
-                alt="shirts displayed"
-              />
-              <div class="category-text">Shirts</div>
-            </div>
-            <div class="category-outerwear">
-              <img
-                class="category-img"
-                src="assets/img/outerwear-category-img.jpg"
-                alt="Outerwear displayed"
-              />
-              <div class="category-text">Outerwear</div>
-            </div>
-            <div class="category-knit">
-              <img
-                class="category-img"
-                src="assets/img/polos-category-img.jpg"
-                alt="knit polos displayed"
-              />
-              <div class="category-text">knit polos</div>
-            </div>
+        <div class="articles grid grid--3-cols">
+          <div class="category-shirt">
+            <img
+              class="category-img"
+              src="assets/img/shirt-category-img.jpg"
+              alt="shirts displayed"
+            />
+            <div class="category-text">Shirts</div>
+          </div>
+          <div class="category-outerwear">
+            <img
+              class="category-img"
+              src="assets/img/outerwear-category-img.jpg"
+              alt="Outerwear displayed"
+            />
+            <div class="category-text">Outerwear</div>
+          </div>
+          <div class="category-knit">
+            <img
+              class="category-img"
+              src="assets/img/polos-category-img.jpg"
+              alt="knit polos displayed"
+            />
+            <div class="category-text">knit polos</div>
           </div>
         </div>
       </section>
@@ -404,6 +403,12 @@
         </ul>
       </div>
     </footer>
+    <div class="message-us">
+      <ion-icon class="msg-icon" name="chatbubble-ellipses"></ion-icon>
+    </div>
+    <div class="preferences">
+      <ion-icon class="msg-icon" name="shield-checkmark-sharp"></ion-icon>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -412,11 +417,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <div class="message-us">
-      <ion-icon class="msg-icon" name="chatbubble-ellipses"></ion-icon>
-    </div>
-    <div class="preferences">
-      <ion-icon class="msg-icon" name="shield-checkmark-sharp"></ion-icon>
-    </div>
   </body>
 </html>
