@@ -1,0 +1,96 @@
+body {
+  font-family: "Futura PT", sans-serif;
+  color: #1c1c1c;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 75%;
+}
+
+.color-dot {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+}
+
+.card:hover .add-to-cart {
+  opacity: 1;
+}
+
+.flag {
+  width: 2rem;
+  height: 1.5rem;
+  background: url("https://mdbootstrap.com/img/svg/flags.png") -69px -1946px;
+}
+
+.dropdown-menu {
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-card {
+  scrollbar-width: none;
+}
+
+.message-us {
+  background-color: #767676;
+  border-radius: 100px;
+  padding: 1.3rem 1.5rem;
+  position: fixed;
+  right: 2.4%;
+  bottom: 7.2%;
+  cursor: pointer;
+}
+
+.preferences {
+  background-color: #6aaae4;
+  position: fixed;
+  left: 1%;
+  bottom: 2%;
+  padding: 0.8rem 1.8rem 0.8rem 0;
+  border-radius: 10px;
+}
+
+.msg-icon {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.box-icon {
+  font-size: 3rem;
+}
+
+.dropdown-menu {
+  padding: 4rem;
+}
+
+.hero-text-box {
+  top: 30%;
+  right: 12%;
+}
+
+.about-text-box {
+  top: 25%;
+  left: 3.5%;
+}
+
+@font-face {
+  font-family: futuraBold;
+  src: url("../assets/fonts/futura_n7.153f8fffad8e901382179997bbb87aa7a5ff33b3.woff2");
+}
+
+.about-heading {
+  font-family: futuraBold;
+}
