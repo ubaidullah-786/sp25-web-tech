@@ -204,6 +204,8 @@
 .hero-text-box {
   color: #fff;
   position: absolute;
+  top: 0;
+  /* left:50% */
   top: 30%;
   right: 12%;
 }
